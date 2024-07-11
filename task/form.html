@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="02.style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="section">
+        <div class="form-group">
+          <label for="username">Kullanici Adi:</label>
+          <input type="text" id="username" name="username" />
+          <input type="text" value="Kullanilabilir mi?" readonly />
+        </div>
+        <div class="form-group">
+          <label for="first_name">Adi:</label>
+          <input type="text" id="first_name" name="first_name" />
+        </div>
+        <div class="form-group">
+          <label for="last_name">Soyadi:</label>
+          <input type="text" id="last_name" name="last_name" />
+        </div>
+        <div class="form-group">
+          <label for="email">E posta Adresi:</label>
+          <input type="email" id="email" name="email" />
+          <input type="text" value="Kullanilabilir mi?" readonly />
+        </div>
+        <div class="form-group">
+          <label for="password">Şifreniz:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Şifreniz Tekrarlayin:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+          />
+        </div>
+      </div>
+      <div class="section">
+        <div class="form-group">
+          <label for="dob">Doğum Tarihi:</label>
+          <select id="dob_day" name="dob_day">
+            <option>Gün</option>
+          </select>
+          <select id="dob_month" name="dob_month">
+            <option>ay</option>
+          </select>
+          <select id="dob_year" name="dob_year">
+            <option>2004</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="language">Dil:</label>
+          <select id="language" name="language">
+            <option>Dil</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="website">Web Sitesi(varsa):</label>
+          <input type="url" id="website" name="website" />
+        </div>
+        <div class="form-group">
+          <label for="location">Konum:</label>
+          <input type="text" id="location" name="location" />
+        </div>
+        <div class="form-group">
+          <label for="profession">Meslek:</label>
+          <input type="text" id="profession" name="profession" />
+        </div>
+        <div class="form-group checkbox-group">
+          <label>İlgi Alanlari Secinız:</label>
+          <input
+            type="checkbox"
+            id="interest_yildiz"
+            name="interests"
+            value="yildiz"
+          />
+          <label for="interest_yildiz">Yildiz Dergisi</label>
+          <input
+            type="checkbox"
+            id="interest_futbol"
+            name="interests"
+            value="futbol"
+          />
+          <label for="interest_futbol">futbol</label>
+          <input
+            type="checkbox"
+            id="interest_folklore"
+            name="interests"
+            value="folklore"
+          />
+          <label for="interest_folklore">folklor</label>
+          <input
+            type="checkbox"
+            id="interest_travel"
+            name="interests"
+            value="travel"
+          />
+          <label for="interest_travel">gezi</label>
+          <input
+            type="checkbox"
+            id="interest_sports"
+            name="interests"
+            value="sports"
+          />
+          <label for="interest_sports">spor</label>
+        </div>
+      </div>
+      <div class="section">
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="activate_email"
+            name="special_info"
+            value="activate_email"
+          />
+          <label for="activate_email"
+            >yildizdergi e-mail adresimi aktive et ve kullan</label
+          >
+        </div>
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="use_email"
+            name="special_info"
+            value="use_email"
+          />
+          <label for="use_email">bu e-mail adresimi kullan</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="new_sports_games"
+            name="special_info"
+            value="new_sports_games"
+          />
+          <label for="new_sports_games"
+            >Yeni spor oyunlari edinmek istiyorum</label
+          >
+        </div>
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="set_homepage"
+            name="special_info"
+            value="set_homepage"
+          />
+          <label for="set_homepage">İnternete giriş sayfam BURASI olsun</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="accept_terms"
+            name="special_info"
+            value="accept_terms"
+          />
+          <label for="accept_terms"
+            >yildiz dergisini okudum ve kabul ediyorum.</label
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
